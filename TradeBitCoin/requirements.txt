@@ -1,0 +1,6 @@
+# requirements.txt
+python-dotenv
+ccxt
+pandas
+anthropic
+google-generativeai 
