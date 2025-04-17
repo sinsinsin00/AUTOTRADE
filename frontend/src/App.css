@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #f0f0f0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 0;
+  background-color: white;
+  color: #333;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* 상단 바 스타일 */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: white;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.app-header h1 {
+  margin: 0 0 0 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.app-header .logo {
+  height: 2.5em;
+  padding: 0.5em;
+}
+
+.header-nav button {
+  margin-left: 10px;
+  padding: 0.5em 1em;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 메인 컨텐츠 영역 Wrapper */
+.app-body {
+  display: flex;
+  flex: 1;
+  background-color: #f0f0f0;
+}
+
+/* 좌측 사이드바 스타일 */
+.sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  border-right: 1px solid #ccc;
+  background-color: white;
+  padding: 1em;
+  overflow-y: auto;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav button {
+  width: 100%;
+  text-align: left;
+  padding: 0.8em 1em;
+  margin-bottom: 0.5em;
+}
+
+/* 메인 화면 스타일 */
+.main-content {
+  flex: 1;
+  padding: 1em;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/* 기존 카드 스타일 조정 */
+.card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-bottom: 0;
+  background-color: white;
+  color: #333;
+  padding: 1em;
+}
+
+/* 메인 컨텐츠 카드 스타일 */
+.main-content .card {
+  flex: 1 1 300px;
+  max-width: 500px;
+  min-width: 280px;
+  min-height: 180px;
+}
+
+/* ... 기타 로고, 버튼 스타일 ... */
